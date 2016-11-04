@@ -5,10 +5,17 @@
 TEMPLATE = app
 TARGET = GuiPlyPcdConverter
 DEPENDPATH += .
-INCLUDEPATH += . /usr/include/eigen3 /usr/local/include/pcl-1.8 /usr/include/vtk-5.10
+INCLUDEPATH += . /usr/include/eigen3 /usr/local/include/pcl-1.7 /usr/include/vtk-5.10
 LIBS += -lQVTK -lvtkCommon -lvtkFiltering -lvtkIO -lvtkRendering -lboost_thread -lvtkGraphics -lboost_system -L/usr/local/lib -lpcl_common -lpcl_io
 
 # Input
 HEADERS += newForm.h
 FORMS += newForm.ui
 SOURCES += main.cpp newForm.cpp
+
+CONFIG += staticlib
+DESTDIR=bin
+OBJECTS_DIR=generated_files
+MOC_DIR=generated_files
+UI_DIR=generated_files
+
