@@ -18,8 +18,8 @@
 
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
-#include <pcl-1.7/pcl/io/ply_io.h>
-#include <pcl-1.8/pcl/point_cloud.h>
+#include <pcl/io/ply_io.h>
+#include <pcl/point_cloud.h>
 
 
 const QString newForm::PCD_FILTER = "PCD file *.pcd (*.pcd)";
